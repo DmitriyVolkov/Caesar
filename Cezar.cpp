@@ -51,7 +51,7 @@ void Vigenere(char string[500]) //Vigener
 	cout << "Enter the secret word: ";
 	cin >> a;
 	char shift[100];
-	gets_s(shift);
+	gets(shift);
 	for (int i = 0; i < strlen(string); i++) //ENCODING
 	{
 		if (string[i] != 32)
@@ -93,7 +93,7 @@ int main(int argc, char* argv[])
 	setlocale(LC_ALL, "Russian");
 	char string[500];
 	cout << "Enter text: "; 
-	gets_s(string); 
+	gets(string); 
 	int key;
 	cout << "1 - Caesar" << endl << "2 - Vigener" << endl; 
 	cout << "Enter the encryption method: ";
